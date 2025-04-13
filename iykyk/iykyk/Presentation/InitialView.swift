@@ -15,15 +15,17 @@ struct InitialView: View {
         .font(Font.pretendard(.bold, size: 36))
         .padding(.bottom, 5)
       
-      Text("이 중 누가 나를 좋아할까요?")
+      Text("Which one likes me?")
         .foregroundStyle(.textGray)
+      
+      Spacer().frame(height: 125)
     
-      MainBtn(buttonTitle: "채팅방 만들기") {
-        print("채팅방 만들기 버튼 눌렀어요.")
+      MainBtn(buttonTitle: "New Chat Room") {
+
       }
       
       EnterRoomBtn {
-        print("채팅방 입장 버튼 눌렀어요.")
+
       }
     }
   }
